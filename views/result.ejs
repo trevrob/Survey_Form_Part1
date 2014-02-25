@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title><%= title %></title>
+</head>
+<body>
+	<h2>Submitted Information</h2>
+	<% if(session_data.name)
+       { %>
+         <%= "Name: " + session_data.name %> <br>
+         <%= "Location: " + session_data.location %> <br>
+         <%= "Language: " + session_data.language %> <br>
+         <%= "Comments: " + session_data.comments %> <br>
+    <% } %> 
+    <a href='/'>Back</a>
+
+</body>
+</html> 

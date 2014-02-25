@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  </head>
+  <body>
+    <h1>Submitting Form</h1>
+
+    <form action="/process" method="post">
+      <b>Name: </b><input type="text" name="name" placeholder="Name" /><br>
+      <b>Location: </b><select name='location'>
+      	<option value='Mountain View'>Mountain View</option>
+      	<option value='Bellevue'>Bellevue</option>
+      </select><br>
+      <b>Language: </b><select name='language'>
+      	<option value='PHP'>PHP</option>
+      	<option value='Javascript'>Javascript</option>
+      	<option value='Ruby'>Ruby</option>
+      	<option value='Python'>Python</option>
+      	<option value='NodeJS'>NodeJS</option>
+      	<option value='Seasharp'>Seasharp</option>
+      	<option value='Perl'>Perl</option>
+      </select><br>
+      <b>Comments (Optional):</b><br>
+      <textarea name='comments' rows="4" cols="30"></textarea><br>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
